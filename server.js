@@ -7,7 +7,7 @@ const cors = require('cors');
 connectDB();
 
 const corsOptions={
-    origin:process.env.ALLOWED_CLIENTS.split(',')
+    origin:process.env.ALLOWED_CLIENTS.split(','), credentials: true
 }
 //const corsOptions = { origin: ["https://fastfile-share.herokuapp.com", ""], credentials: true }
 
